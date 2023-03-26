@@ -9,7 +9,6 @@ const Fourth = () => {
       </div>
       <div className={classes.ending}>
         <div className={classes.left}>
-          <div>Subjected to hyderabad juridictions only</div>
           <div className={classes.termss}>Terms & Conditions : </div>
           <div className={classes.terms}>
             Goods once sold will not be taken back.

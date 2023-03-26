@@ -58,18 +58,30 @@ const Third = () => {
               ₹{amount.toLocaleString("en-IN")}/-
             </div>
           </div>
-          <div className={classes.total}>
-            <div className={classes.label}>SGST: 9%</div>
-            <div className={classes.amount}>
-              ₹{(0.9 * amount).toLocaleString("en-IN")}/-
+          {details.selected == "A" ? (
+            <>
+              <div className={classes.total}>
+                <div className={classes.label}>SGST: 9%</div>
+                <div className={classes.amount}>
+                  ₹{(0.09 * amount).toLocaleString("en-IN")}/-
+                </div>
+              </div>
+              <div className={classes.total}>
+                <div className={classes.label}>CGST: 9%</div>
+                <div className={classes.amount}>
+                  ₹{(0.09 * amount).toLocaleString("en-IN")}/-
+                </div>
+              </div>
+            </>
+          ) : (
+            <div className={classes.total}>
+              <div className={classes.label}>IGST: 18%</div>
+              <div className={classes.amount}>
+                ₹{(0.18 * amount).toLocaleString("en-IN")}/-
+              </div>
             </div>
-          </div>
-          <div className={classes.total}>
-            <div className={classes.label}>CGST: 9%</div>
-            <div className={classes.amount}>
-              ₹{(0.9 * amount).toLocaleString("en-IN")}/-
-            </div>
-          </div>
+          )}
+
           <div className={classes.total}>
             <div className={classes.label}>G Total</div>
             <div className={classes.amount}>

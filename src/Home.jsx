@@ -6,6 +6,8 @@ import History from "./Components/History";
 import Preview from "./Components/Preview";
 export const InvoiceContext = createContext(null);
 const Home = () => {
+  const [selected, setSelected] = useState("A");
+  const [type, setType] = useState("A");
   const [history, setHistory] = useState(false);
   const [fkiitem, setFkiitem] = useState([]);
   const [name, setName] = useState({
@@ -38,6 +40,10 @@ const Home = () => {
       name,
       fkname,
       fkiitem,
+      type,
+      setType,
+      selected,
+      setSelected,
       setFkiitem,
       setFkname,
       setName,

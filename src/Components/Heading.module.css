@@ -1,18 +1,26 @@
 .box {
   display: block;
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: -10px;
+}
+
+.head {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .tax {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 20px;
-  margin-left: 40%;
-  margin-right: 40%;
   border: 2px solid black;
+  padding: 0 5px;
+}
+.email {
+  margin-left: 330px;
+  font-size: 10px;
 }
 
 .company {
@@ -23,6 +31,6 @@
 
 .desc {
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   margin-top: 2px;
 }

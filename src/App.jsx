@@ -127,6 +127,7 @@ function App() {
     }
     const updatedObj = {
       ...details.name,
+      option: details.selected,
       data: {
         ...details.name.data,
         items: [...details.name.data.items, details.fkiitem],
@@ -143,6 +144,13 @@ function App() {
       Unit: "",
     });
   };
+
+  const [selected, setSelected] = useState("A");
+
+  // const handleChange = (selectedOption) => {
+  //   setSelected(selectedOption);
+  //   console.log(`Option selected:`, selectedOption);
+  // };
 
   useEffect(() => {
     console.log(details.name);
@@ -164,9 +172,9 @@ function App() {
     <div className={classes.view}>
       <div className={classes.forms}>
         <div className={classes.cusdesc}>INVOICE</div>
-        <form type="submit">
+        <form type="submit" className={classes.orgfor}>
           <div className={classes.infut}>
-            <div>
+            <div className={classes.infutcont}>
               <label className={classes.laleb}>Buyer's Name :</label>
               <input
                 type="text"
@@ -182,7 +190,7 @@ function App() {
             </div>
           </div>
           <div className={classes.infut}>
-            <div>
+            <div className={classes.infutcont}>
               <label className={classes.laleb}>Address:</label>
               <input
                 type="text"
@@ -199,7 +207,7 @@ function App() {
             </div>
           </div>
           <div className={classes.infut}>
-            <div>
+            <div className={classes.infutcont}>
               <label className={classes.laleb}>GSTIN:</label>
               <input
                 type="text"
@@ -215,7 +223,7 @@ function App() {
             </div>
           </div>
           <div className={classes.infut}>
-            <div>
+            <div className={classes.infutcont}>
               <label className={classes.laleb}>Invoice No. :</label>
               <input
                 type="number"
@@ -231,7 +239,7 @@ function App() {
             </div>
           </div>
           <div className={classes.infut}>
-            <div>
+            <div className={classes.infutcont}>
               <label className={classes.laleb}>Date : </label>
               <input
                 className={classes.intup}
@@ -247,7 +255,7 @@ function App() {
             </div>
           </div>
           <div className={classes.infut}>
-            <div>
+            <div className={classes.infutcont}>
               <label className={classes.laleb}>Buyer's order no.:</label>
               <input
                 type="number"
@@ -263,7 +271,7 @@ function App() {
             </div>
           </div>
           <div className={classes.infut}>
-            <div>
+            <div className={classes.infutcont}>
               {" "}
               <label className={classes.laleb}>DC no.:</label>
               <input
@@ -279,9 +287,35 @@ function App() {
               />
             </div>
           </div>
+          <div className={classes.sel}>
+            <select
+              defaultvalue="A"
+              className={classes.GST}
+              onChange={(e) => {
+                details.setSelected(e.target.value);
+              }}
+            >
+              <option value="A">SGST & CGST </option>
+              <option value="B">IGST</option>
+            </select>
+          </div>
+          <div className={classes.sel}>
+            <select
+              defaultvalue="A"
+              className={classes.GST}
+              onChange={(e) => {
+                details.setType(e.target.value);
+              }}
+            >
+              <option value="A">Invoice </option>
+              <option value="B">Proforma Invoice</option>
+            </select>
+          </div>
+
           <button onClick={SubmitHandler} className={classes.submitha}>
             Submit
           </button>
+
           <div className={classes.item}>
             <label className={classes.itemhead}>Item</label>
             {/* <input type="number" value={fkiitem.Sno} placeholder="S.No" /> */}
