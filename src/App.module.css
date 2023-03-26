@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+}
+
+.botbut {
+  margin-bottom: 10px;
+}
+
+.forms {
+  font-family: "Poppins", sans-serif;
+}
+
+.border {
+  width: 595px;
+  height: 818px;
+  border: solid 2px black;
+  padding-top: 20px;
+  margin-top: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.view {
+  display: block;
+  margin-left: 0px;
+  margin-right: auto;
+  width: 100vw;
+}
+
+.forms {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .cusdesc {
+    font-size: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .submitha {
+    margin-left: 10px;
+    width: 150px;
+    font-weight: 500;
+    font-size: 25px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+    background-color: #ffa500;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .itemhead {
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .infut {
+    width: 100vw;
+    display: flex;
+    padding-left: 10px;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    align-items: start;
+  }
+
+  .intup {
+    margin-bottom: 5px;
+    font-size: 20px;
+    width: 360px;
+    height: 50px;
+    background-color: #05060f15;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-family: "Poppins", sans-serif;
+    transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+      color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+      background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+  }
+
+  .iteminfut {
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .laleb {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+  }
+
+  .intup:hover,
+  .intup:focus,
+  .intup-group:hover .intup {
+    outline: none;
+    border-color: #05060f;
+  }
+
+  .intup-group:hover .label,
+  .intup:focus {
+    color: #05060fc2;
+  }
+}

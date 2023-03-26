@@ -1,0 +1,58 @@
+.arrange {
+  display: flex;
+  text-align: center;
+  font-size: 10px;
+  width: 532.5px;
+}
+
+.singleitem {
+  display: flex;
+  width: 572.5px;
+  cursor: pointer;
+}
+
+.arrange :first-child {
+  width: 40px;
+  border-right: solid 1px black;
+  padding: 4px 0;
+  border-bottom: solid 1px black;
+}
+
+.itemdel {
+  margin-left: 35px;
+}
+
+.Desc {
+  width: 200px;
+  border-bottom: solid 1px black;
+  border-right: solid 1px black;
+  padding: 4px 0;
+}
+.HSN {
+  width: 50px;
+  border-bottom: solid 1px black;
+  padding: 4px 0;
+  border-right: solid 1px black;
+}
+.Qty {
+  width: 62.5px;
+  border-bottom: solid 1px black;
+  padding: 4px 0;
+  border-right: solid 1px black;
+}
+.Price {
+  width: 80px;
+  border-bottom: solid 1px black;
+  padding: 4px 0;
+
+  border-right: solid 1px black;
+}
+.Amo {
+  width: 100px;
+  padding: 4px 0;
+  border-bottom: solid 1px black;
+}
+
+.edit {
+  margin-left: 0px;
+}

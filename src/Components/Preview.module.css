@@ -1,0 +1,21 @@
+.border {
+  width: 595px;
+  height: 818px;
+  border: solid 2px black;
+  padding-top: 20px;
+  margin-top: 0;
+  margin: 0;
+}
+
+.submitha {
+  margin-left: 10px;
+  width: 200px;
+  font-weight: 500;
+  font-size: 25px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 10px;
+  background-color: #ffa500;
+  border: none;
+  border-radius: 10px;
+}

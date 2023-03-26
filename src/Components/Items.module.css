@@ -1,0 +1,78 @@
+.box {
+  width: 89.5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+.headings {
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+}
+
+.headings :first-child {
+  width: 40px;
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.Desc {
+  width: 200px;
+  border-bottom: solid 1px black;
+  border-right: solid 1px black;
+}
+.HSN {
+  width: 50px;
+  border-bottom: solid 1px black;
+  border-right: solid 1px black;
+}
+.Qty {
+  width: 62.5px;
+  border-bottom: solid 1px black;
+  border-right: solid 1px black;
+}
+.Price {
+  width: 80px;
+  border-bottom: solid 1px black;
+  border-right: solid 1px black;
+}
+.Amo {
+  width: 100px;
+  border-bottom: solid 1px black;
+}
+
+.total {
+  display: flex;
+  border-bottom: solid 1px black;
+  justify-content: right;
+  text-align: center;
+  gap: 0;
+}
+
+.total :first-child {
+  width: 352.5px;
+  border-top: solid 1px black;
+}
+
+.label {
+  width: 80px;
+  border-bottom: solid 1px black;
+  border-top: solid 1px black;
+  border-right: solid 1px black;
+  border-left: solid 1px black;
+}
+
+.amount {
+  width: 99px;
+  border-bottom: solid 1px black;
+  border-top: solid 1px black;
+}
+
+.tottax {
+  font-size: 14px;
+}

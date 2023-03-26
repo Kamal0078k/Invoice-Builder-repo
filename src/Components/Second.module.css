@@ -1,0 +1,49 @@
+.buyer {
+  height: 110px;
+  width: 60%;
+  border: solid black 1px;
+  margin-top: -1px;
+  margin-left: 5%;
+}
+
+.details {
+  font-size: 12px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.details span {
+  font-weight: 700;
+}
+
+.Second {
+  display: flex;
+  flex-direction: row;
+
+  /* background-color: blueviolet; */
+  gap: 0;
+}
+
+.otherdetails {
+  height: 110px;
+  margin-top: -1px;
+  margin-left: -1px;
+  width: 40%;
+  font-size: 12px;
+  margin-right: 5%;
+  border: solid black 1px;
+  padding-left: 5px;
+}
+
+.otherdetails span {
+  font-weight: 700;
+}
+
+.otherdetails div {
+  margin: 3.2px 0;
+}
+
+hr {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  margin-left: -0.3em;
+}
