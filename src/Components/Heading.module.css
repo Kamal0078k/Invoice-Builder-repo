@@ -1,11 +1,11 @@
-.box {
+/* .box {
   display: block;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
   margin-top: -10px;
-}
+} */
 
 .head {
   display: flex;

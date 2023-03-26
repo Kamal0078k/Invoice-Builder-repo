@@ -40,6 +40,10 @@
   font-size: 12px;
 }
 
+.right span {
+  width: 130px;
+}
+
 .ending {
   display: flex;
   margin-top: 20px;

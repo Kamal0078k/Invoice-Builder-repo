@@ -9,7 +9,7 @@ const Heading = () => {
         {details.type == "A" ? (
           <div className={classes.tax}>Tax Invoice</div>
         ) : (
-          <div className={classes.tax}>Proforma Tax Invoice</div>
+          <div className={classes.tax}>Proforma Invoice</div>
         )}
       </div>
 

@@ -23,7 +23,10 @@ const Fourth = () => {
           </div>
         </div>
         <div className={classes.middle}>E. & O.E.</div>
-        <div className={classes.right}>For Bhagya Laxmi S.S Fabrications</div>
+        <div className={classes.right}>
+          {" "}
+          <span>For Bhagya Laxmi S.S Fabrications</span>{" "}
+        </div>
       </div>
       <div className={classes.sign}>Authority Signature</div>
     </div>
