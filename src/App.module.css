@@ -111,6 +111,10 @@ body {
     border-color: #05060f;
   }
 
+  .submitha:active {
+    background-color: #ff7b00;
+  }
+
   .intup-group:hover .label,
   .intup:focus {
     color: #05060fc2;

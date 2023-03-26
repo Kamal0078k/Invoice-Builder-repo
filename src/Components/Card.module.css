@@ -21,6 +21,10 @@ body {
   border-radius: 10px;
 }
 
+.submitha:active {
+  background-color: #ff7b00;
+}
+
 .card {
   display: flex;
   flex-direction: column;
