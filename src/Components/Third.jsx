@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import classes from "./Third.module.css";
 import converter from "number-to-words";
 import { InvoiceContext } from "./../Home";
-import rupee from "./../assets/rupee1.jpg";
+
 import { ToWords } from "to-words";
 
 const Third = () => {
