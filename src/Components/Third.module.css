@@ -8,6 +8,10 @@
   height: 73px;
 }
 
+.rupee {
+  width: 8px;
+}
+
 .first {
   border-right: solid black 1px;
   width: 352.5px;
@@ -38,6 +42,9 @@
 
 .amount {
   width: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-bottom: solid 1px black;
 }
 

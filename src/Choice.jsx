@@ -7,7 +7,7 @@ const Choice = () => {
     <div className={classes.homie}>
       <div className={classes.open}>
         <div className={classes.container}>
-          <div className={classes.title}>Bhagya Laxmi S.S Fabrications</div>
+          <div className={classes.titlle}>Bhagya Laxmi S.S Fabrications</div>
           <button className={classes.option}>
             <Link to="/invoice">Invoice</Link>
           </button>

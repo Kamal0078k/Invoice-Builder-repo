@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import classes from "./Third.module.css";
 import converter from "number-to-words";
 import { InvoiceContext } from "./../Home";
+import rupee from "./../assets/rupee1.jpg";
 import { ToWords } from "to-words";
 
 const Third = () => {
@@ -55,7 +56,7 @@ const Third = () => {
           <div className={classes.total}>
             <div className={classes.label}>Total</div>
             <div className={classes.amount}>
-              ₹{amount.toLocaleString("en-IN")}/-
+              Rs.{amount.toLocaleString("en-IN")}/-
             </div>
           </div>
           {details.selected == "A" ? (
@@ -63,13 +64,13 @@ const Third = () => {
               <div className={classes.total}>
                 <div className={classes.label}>SGST: 9%</div>
                 <div className={classes.amount}>
-                  ₹{(0.09 * amount).toLocaleString("en-IN")}/-
+                  Rs.{(0.09 * amount).toLocaleString("en-IN")}/-
                 </div>
               </div>
               <div className={classes.total}>
                 <div className={classes.label}>CGST: 9%</div>
                 <div className={classes.amount}>
-                  ₹{(0.09 * amount).toLocaleString("en-IN")}/-
+                  Rs.{(0.09 * amount).toLocaleString("en-IN")}/-
                 </div>
               </div>
             </>
@@ -77,7 +78,7 @@ const Third = () => {
             <div className={classes.total}>
               <div className={classes.label}>IGST: 18%</div>
               <div className={classes.amount}>
-                ₹{(0.18 * amount).toLocaleString("en-IN")}/-
+                Rs.{(0.18 * amount).toLocaleString("en-IN")}/-
               </div>
             </div>
           )}
@@ -85,7 +86,7 @@ const Third = () => {
           <div className={classes.total}>
             <div className={classes.label}>G Total</div>
             <div className={classes.amount}>
-              ₹{Math.round(1.18 * amount).toLocaleString("en-IN")}/-
+              Rs.{Math.round(1.18 * amount).toLocaleString("en-IN")}/-
             </div>
           </div>
         </div>
