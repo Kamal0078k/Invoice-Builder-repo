@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Fourth.module.css";
-
+import bsf from "./../assets/bsf.png";
 const Fourth = () => {
   return (
     <div className={classes.fourth}>
@@ -25,7 +25,7 @@ const Fourth = () => {
         <div className={classes.middle}>E. & O.E.</div>
         <div className={classes.right}>
           {" "}
-          <span>For Bhagya Laxmi S.S Fabrications</span>{" "}
+          <img src={bsf} className={classes.image} />{" "}
         </div>
       </div>
       <div className={classes.sign}>Authority Signature</div>

@@ -14,15 +14,15 @@ const Heading = () => {
       </div>
 
       <div className={classes.company}>BHAGYA LAXMI S.S FABRICATIONS</div>
-      <div className={classes.desc}>
+      <div className={classes.email}>
+        Email : sales@bhagyalaxmissfabrications.com
+      </div>
+      <div className={classes.desc1}>
         Specialist in : All types of Hospitals, HotelWorks & all kinds of works
       </div>
       <div className={classes.desc}>
         3-13-107/1, SURYANAGAR COLONY, CHANIKYAPURI COLONY, FCI GODOWNS ROAD,
         MALLAPUR, MEDCHAL MALKAJGIRI , Pin 500076, HYDERABAD , TELANGANA{" "}
-      </div>
-      <div className={classes.email}>
-        Email : sales@bhagyalaxmissfabrications.com
       </div>
     </div>
   );

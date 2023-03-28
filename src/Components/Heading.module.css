@@ -20,7 +20,7 @@
 }
 .email {
   font-size: 10px;
-  margin-bottom: 10px;
+
   width: 90%;
   display: flex;
   align-items: center;
@@ -36,7 +36,17 @@
 .desc {
   text-align: center;
   font-size: 10px;
-  margin-top: 2px;
+
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+
+.desc1 {
+  text-align: center;
+  font-size: 10px;
+
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
