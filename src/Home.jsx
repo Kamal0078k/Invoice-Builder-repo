@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import App from "./App";
 import Choice from "./Choice";
 import History from "./Components/History";
-import Preview from "./Components/Preview";
+import Preview2 from "./Components/Preview";
 export const InvoiceContext = createContext(null);
 const Home = () => {
   const [selected, setSelected] = useState("A");
@@ -59,7 +59,7 @@ const Home = () => {
         <Route path="/invoice" element={<App />} />
         <Route path="/history" element={<History />} />
         <Route path="/invoice/:id" element={<App />} />
-        <Route path="/invoice/preview" element={<Preview />} />
+        <Route path="/invoice/preview" element={<Preview2 />} />
       </Routes>
     </InvoiceContext.Provider>
   );
