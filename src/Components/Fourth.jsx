@@ -25,7 +25,8 @@ const Fourth = () => {
         <div className={classes.middle}>E. & O.E.</div>
         <div className={classes.right}>
           {" "}
-          <img src={bsf} className={classes.image} />{" "}
+          For bhagya Laxmi SS fabrications
+          {/* <img src={bsf} className={classes.image} />{" "} */}
         </div>
       </div>
       <div className={classes.sign}>Authority Signature</div>

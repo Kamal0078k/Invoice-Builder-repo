@@ -15,10 +15,12 @@
 
 .terms {
   font-size: 10px;
+  letter-spacing: 0.005px;
 }
 .termss {
   font-size: 10px;
   font-weight: 600;
+  letter-spacing: 0.005px;
 }
 
 .left {

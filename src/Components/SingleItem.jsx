@@ -19,8 +19,8 @@ const SingleItem = (props) => {
         <div className={classes.Desc}>{props.desc}</div>
         <div className={classes.HSN}> {props.HSN}</div>
         <div className={classes.Qty}>{props.Qty}</div>
-        <div className={classes.Price}>{props.Price}</div>
-        <div className={classes.Amo}>{props.amount}</div>
+        <div className={classes.Price}>Rs.{props.Price}</div>
+        <div className={classes.Amo}>Rs.{props.amount}</div>
       </div>
     </div>
   );
