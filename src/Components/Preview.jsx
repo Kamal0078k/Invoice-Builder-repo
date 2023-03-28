@@ -6,7 +6,7 @@ import Third from "./Third";
 import Fourth from "./Fourth";
 import classes from "./Preview.module.css";
 import InvoiceServices from "./../services/firebase-service";
-import jsPDF from "jspdf";
+
 import { InvoiceContext } from "./../Home";
 
 import { PDFExport, savePDF } from "@progress/kendo-react-pdf";
