@@ -64,7 +64,8 @@ const Third = () => {
               <div className={classes.total}>
                 <div className={classes.label}>SGST: 9%</div>
                 <div className={classes.amount}>
-                  Rs.{(0.09 * amount).toLocaleString("en-IN")}/-
+                  Rs.
+                  {(0.09 * amount).toLocaleString("en-IN")}/-
                 </div>
               </div>
               <div className={classes.total}>

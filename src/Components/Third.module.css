@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
 .third {
   display: flex;
   margin-left: 30px;
@@ -6,6 +8,10 @@
   width: 533px;
   border: 1px solid black;
   height: 73px;
+}
+
+.amount span {
+  font-family: "Poppins", sans-serif;
 }
 
 .rupee {
