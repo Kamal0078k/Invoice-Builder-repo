@@ -15,9 +15,7 @@ const Heading = () => {
 
       <div className={classes.company}>BHAGYA LAXMI S.S FABRICATIONS</div>
       <div className={classes.email}>
-        <div>EMAIL :</div>
-        <div>sales@bhagyalaxmissfabrications</div>
-        <div>.com</div>
+        Email : sales@bhagyalaxmissfabrications.com
       </div>
       <div className={classes.desc1}>
         Specialist in : All types of Hospitals, HotelWorks & all kinds of works

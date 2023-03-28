@@ -20,6 +20,7 @@ import History from "./Components/History";
 import { InvoiceContext } from "./Home";
 import { ToWords } from "to-words";
 import ItemCard from "./Components/ItemCard";
+import DescCard from "./Components/DescCard";
 
 // export const InvoiceContext = createContext(null);
 
@@ -166,6 +167,11 @@ function App() {
   //   }),
   //   [name]
   // );
+
+  const onEditHandler = (e) => {
+    e.preventDefault();
+    details.setFkname(details.name);
+  };
 
   return (
     // <InvoiceContext.Provider value={contextValue}>
@@ -315,6 +321,16 @@ function App() {
           <button onClick={SubmitHandler} className={classes.submitha}>
             Submit
           </button>
+          {details.name.Buyername != "" ? (
+            <DescCard
+              name={details.name}
+              Invoice={details.type}
+              GST={details.selected}
+              onClick={onEditHandler}
+            />
+          ) : (
+            ""
+          )}
 
           <div className={classes.item}>
             <label className={classes.itemhead}>Item</label>
