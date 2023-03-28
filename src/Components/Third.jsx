@@ -41,7 +41,7 @@ const Third = () => {
   }, [details]);
 
   useEffect(() => {
-    let wards = toWords.convert(amount);
+    let wards = toWords.convert(Math.round(1.18 * amount));
     setWords(wards);
   }, [amount]);
 
