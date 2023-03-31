@@ -14,6 +14,7 @@ const Preview = () => {
 
   const GeneratePDF = async () => {
     var doc = new jsPDF("p", "pt", "a4");
+
     doc.html(document.querySelector("#INVOICE"), {
       callback: function (pdf) {
         var pageCount = doc.internal.getNumberOfPages();

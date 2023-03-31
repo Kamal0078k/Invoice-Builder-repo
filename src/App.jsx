@@ -264,7 +264,7 @@ function App() {
             <div className={classes.infutcont}>
               <label className={classes.laleb}>Buyer's order no.:</label>
               <input
-                type="number"
+                type="text"
                 className={classes.intup}
                 value={details.fkname.OrderNo}
                 onChange={(event) =>

@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./DescCard.module.css";
 
 const DescCard = (props) => {
+  const [day, setDay] = useState();
+  const [month, setMonth] = useState();
+  const [year, setYear] = useState();
+  useEffect(() => {
+    if (props.name.Date != "") {
+      var datePart = props.name.Date.match(/\d+/g);
+      setYear(datePart[0].substring(2)); // get only two digits);
+      setDay(datePart[2]);
+      setMonth(datePart[1]);
+    }
+  }, [props]);
   return (
     <div className={classes.desccontainer}>
       <div className={classes.desccard}>
@@ -22,7 +33,7 @@ const DescCard = (props) => {
             DC no. : <span>{props.name.DCNo}</span>{" "}
           </div>
           <div>
-            Date : <span>{props.name.Date}</span>{" "}
+            Date : <span>{day + "/" + month + "/" + year}</span>{" "}
           </div>
           <div>
             BuyerOrder no. : <span>{props.name.OrderNo}</span>{" "}
