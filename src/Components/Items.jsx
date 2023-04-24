@@ -32,7 +32,7 @@ const Items = () => {
             HSN={e.HSN}
             Qty={e.Qty}
             Price={e.Unit.toLocaleString("en-IN")}
-            amount={`₹${(e.Unit * e.Qty).toLocaleString("en-IN")}`}
+            amount={`${(e.Unit * e.Qty).toLocaleString("en-IN")}`}
             onClick={() => {
               const index = details.name.data.items.indexOf(e);
               details.name.data.items.splice(index, 1);

@@ -55,11 +55,6 @@ const Second = ({ children }) => {
           <span>DC,no. :</span>
           {details.name.DCNo}
         </div>
-        <hr />
-        <div>
-          {" "}
-          <span>Dispatched through : Destination</span>{" "}
-        </div>
       </div>
     </div>
   );
